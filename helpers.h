@@ -1,3 +1,6 @@
+//Nicole Eames, Georgia Guillebeau, Trinity Hayes
+
+
 #include "myFunctions.h"
 #include<LiquidCrystal.h>
 #include <RTClib.h>

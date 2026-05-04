@@ -1,3 +1,4 @@
+//Nicole Eames, Georgia Guillebeau, Trinity Hayes
 //For ATMega 2560 ♡
 
 #include "helpers.h"

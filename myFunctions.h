@@ -1,8 +1,9 @@
+//Nicole Eames, Georgia Guillebeau, Trinity Hayes
 //For ATMega 2560 ♡
 
 #pragma once
 
-//for pinMode, digitalWrite, and digitalRead
+//for myPinMode, myDigitalWrite, and myDigitalRead
 volatile unsigned char* port_a = (unsigned char*) 0x22;
 volatile unsigned char* ddr_a = (unsigned char*) 0x21;
 volatile unsigned char* pin_a = (unsigned char*) 0x20;
@@ -59,7 +60,7 @@ volatile unsigned char* my_ADCSRB = (unsigned char*) 0x7B;
 volatile unsigned char* my_ADCSRA = (unsigned char*) 0x7A;
 volatile unsigned int* my_ADC_DATA = (unsigned int*) 0x78;
 
-//for Serial.begin, Serial.available, Serial.print, Serial.println, Serial.read
+//for Serial functions
 #define RDA 0x80
 #define TBE 0x20  
 
@@ -1372,7 +1373,7 @@ int mySerial_available()
   }
 }
 
-//works with individual characters same as Serial.read
+//works with individual characters same as Serial read
 unsigned char mySerial_read()
 {
   unsigned char ch;
